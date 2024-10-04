@@ -1,0 +1,41 @@
+@use 'variables';
+
+.wrapper {
+    background-image: url(../../assets/perlin-noise-3d.png);
+    //background-color: #00000080;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__inner-layout {
+        border: 2px ridge variables.$color-dark;
+        box-shadow: 0px 0px 5rem variables.$color-dark;
+    }
+}
+
+.header {
+    // border-radius: 0.5rem;
+    // background-color: variables.$color-light-transparent;
+    // box-shadow: 0px 0px 20px variables.$color-light-transparent;
+
+    &__title {
+        font-family: variables.$font-face-sans-serif;
+        font-size: 0.85rem;
+    }
+
+    &__navigation-list {
+        font-weight: 800;
+
+        &-item {
+            transition: color 0.5s;
+        }
+
+        &-item:hover {
+            color: variables.$color-medium;
+        }
+    }
+
+}
+
+

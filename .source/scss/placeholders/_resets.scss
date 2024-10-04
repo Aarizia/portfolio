@@ -1,0 +1,11 @@
+@use '../variables';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-family: variables.$font-face-monospace;
+    list-style: none;
+    text-decoration: none;
+}

@@ -1,0 +1,36 @@
+@use 'variables';
+
+.wrapper {
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__inner-layout {
+        height: 95vh;
+        width: 96.5vw;
+    }
+
+    &__content {
+        padding: 1rem;
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    &__navigation-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
