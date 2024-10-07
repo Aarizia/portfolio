@@ -1,8 +1,18 @@
+import { removeSelectedClass, addSelectedClass} from './menu-selected.js';
+
+const menuLinkElements = document.querySelectorAll('.navigation__list-link');
 const mainElement = document.querySelector('.main');
 const homeLinkElement = document.querySelector('#home-link');
 const projectsLinkElement = document.querySelector('#projects-link');
 const aboutLinkElement = document.querySelector('#about-link');
 const contactLinkElement = document.querySelector('#contact-link');
+
+menuLinkElements.forEach((menuLinkElement) => {
+    menuLinkElement.addEventListener('click', () => {
+        removeSelectedClass();
+        addSelectedClass(menuLinkElement);
+    });
+});
 
 homeLinkElement.addEventListener('click', () => {
 

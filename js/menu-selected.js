@@ -1,18 +1,18 @@
-const menuLinkElements = document.querySelectorAll('.navigation__list-link');
+// menuLinkElements.forEach((menuLinkElement) => {
+//     const menuLinkElements = document.querySelectorAll('.navigation__list-link');
+//     menuLinkElement.addEventListener('click', () => {
+//         removeSelectedClass();
+//         addSelectedClass(menuLinkElement);
+//     });
+// });
 
-menuLinkElements.forEach((menuLink) => {
-    menuLink.addEventListener('click', () => {
-        removeSelectedClass();
-        addSelectedClass(menuLink);
-    });
-});
-
-function removeSelectedClass() {
-    menuLinkElements.forEach((menuLink) => {
-        menuLink.classList.remove('selected');
+export function removeSelectedClass() {
+    const menuLinkElements = document.querySelectorAll('.navigation__list-link');
+    menuLinkElements.forEach((menuLinkElement) => {
+        menuLinkElement.classList.remove('selected');
     });
 }
 
-function addSelectedClass(menuLink) {
-    menuLink.classList.add('selected');
+export function addSelectedClass(menuLinkElement) {
+    menuLinkElement.classList.add('selected');
 }
