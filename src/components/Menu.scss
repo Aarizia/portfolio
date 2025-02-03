@@ -1,0 +1,56 @@
+@use '../style/variables';
+
+.menu {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        font-family: variables.$font-face-monospace;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+}
+
+.not-active {
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: none;
+    color: transparent;
+    position: relative;
+
+        &::before {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            color: variables.$color-dark;
+            content: '⚫';
+            font-size: 1rem;
+        }
+}
+
+@media (min-width: 48rem) {
+    
+    .menu {
+
+        &__list {
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: flex-start;
+            position: sticky;
+        }
+    }
+
+    .active {
+    
+            &::before {
+                text-align: left;
+                font-size: 0.5rem;
+            }
+    }
+
+}
