@@ -8,7 +8,7 @@ export default function AboutMain() {
                 <section className="about__section">
                     <h2 className="about__heading">Education</h2>
                     <p className="about__text">I am currently studying front-end web development at Roskilde Technical School.</p>
-                    <p className="about__text">Up until now I have been working with React, Vite, the MERN stack, JavaScript, SASS, CSS in JS, Jest, webpack, CSS and HTML.</p>
+                    <p className="about__text">Up until now I have been working with React, Vite, the MERN stack, PHP, MySQL, WordPress, Jest, webpack, JavaScript, SASS, CSS in JS, CSS and HTML.</p>
                 </section>
                 <section className="about__section">
                     <h2 className="about__heading">Employment</h2>
