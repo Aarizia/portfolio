@@ -16,6 +16,15 @@ export default function ProjectsMain() {
                 <ul className="projects__list">
                     <li className="project">
                         <details ref={detailsElement} class="project__details" /* onToggle={toggleHandler} */>
+                            <summary class="project__summary">May 2025: Movie Ticket App</summary>
+                            <div class="project__container">
+                                <p class="project__text">A web application for mobile phones browsing movies and booking seats in cinemas <span className='line-break'>The web app fetches data from an external api and is build in React, Vite, JavaScript and SASS. It uses the MERN stack to book seats.</span></p>
+                                <a href="https://movie-ticket-app-movie-ticket-app-emmal.onrender.com/" target="_blank" class="project__link">Open project website</a>
+                            </div>
+                        </details>
+                    </li>
+                    <li className="project">
+                        <details ref={detailsElement} class="project__details" /* onToggle={toggleHandler} */>
                             <summary class="project__summary">Feb 2025: Din Mægler</summary>
                             <div class="project__container">
                                 <p class="project__text">A web application for mobile phones browsing residential properties for sale. <span className='line-break'>The web app fetches data from an external api and is build in React, Vite, JavaScript and SASS.</span></p>
